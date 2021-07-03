@@ -1,0 +1,15 @@
+READ ME FILE
+
+1. COMPILE
+
+	iverilog -o test.vvp cpu_tb.v alu_module.v regfile.v decode.v ControlUnit.v cpu.v and.v dataMem.v cache.v insMem.v insCache.v
+
+
+2.RUN
+
+	vvp test.vvp
+
+
+3.OPEN WITH GTKWAVE TOOL
+
+	 gtkwave cpu_wavedata.vcd
